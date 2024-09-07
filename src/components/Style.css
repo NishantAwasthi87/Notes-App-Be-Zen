@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.loading{
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dbc4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage{
+    height: 95vh;
+    width: 97vw;
+    background-color: #5653aa;
+    border-radius: 13px;
+    /* box-shadow: 5px 5px 5px 5px rgb(106, 129, 198); */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; */
+}
+.notes{
+    height: 85vh;
+    width: 96vw;
+    background-color: white;
+    /* margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px; */
+    border-radius: 13px;
+    margin: auto;
+    margin-top: 11px;
+}
+.oops{
+    text-align: center;
+ 
+}
+#heading{
+    color: white;
+    margin-left: 10px;
+    padding-top: 7px;
+    font-size: 32px;
+    font-weight: bold;
+}
+#headingDiv{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+   margin-right: 10px; 
+   margin-top: 6px;
+   background-color: white;
+   color: #5653aa;
+   border: none;
+   padding: 9px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+.btn:hover{
+    background-color: lightgrey;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+   margin: auto;
+   margin-top: 16px;
+}
+.inputTag{
+    margin: 11px;
+    padding: 10px;
+    border-radius: 9px;
+    border:none;
+}
+.addNoteInput{
+    margin: 11px;
+    padding: 10px;
+    height: 30vh;
+    resize: none;
+    border-radius: 9px;
+    border:none;
+}
+.addBtn{
+    background-color: #5653aa;
+    color: white;
+}
+.addBtn:hover{
+    background-color: #8683f3;
+}
+/* CSS for popup */
+.popUp{
+    position: fixed;
+    display: flex;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.popUpInner{
+
+    width:60vw;
+    height: 80vh;
+    border:2px solid lightgray;
+    border-radius: 5px;
+    background-color: #d9ecfa;
+    box-shadow: 3px 3px 3px 1px gray;
+}
+.cross{
+    width:20px;
+   
+}
+/* CSS for Card */
+
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+/* grid-gap: 1rem; */
+justify-items: center;
+    height: 80vh;
+    width: 96vw;
+  align-items: center;
+}
+.card-container{
+    border: 2px solid gray;
+    width: 29vw;
+    height: 35vh;
+    border-radius: 5px;
+    background-color: #ffebe7;
+}
+.card-container:hover{
+    background-color: #f7d0c8;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    height: 35vh;
+    
+}
+.card h2 {
+    align-self: center;
+}
+#tagline{
+    align-self: center;
+
+    border-radius: 20px;
+    padding: 1px 8px;
+    background-color: rgb(130, 0, 0);
+    margin-top: 2px;
+    color: white;
+}
+.card p{
+    padding: 2px 6px;
+    overflow: hidden;
+    height: 75px;
+}
+.icons{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.pagination{
+    
+    text-align: center;
+}
+.cardList-container{
+    height: 80vh;
+    width: 96vw;
+}
+
+/* Responsive designing */
+@media only screen and (max-width: 325px) {
+    
+    .card-list{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+     
+    }
+    .card-container{
+        width: 84vw;
+        margin:9px;
+    }
+    .cardList-container{
+        overflow: scroll;
+        height: 82vh;
+    }
+    .card{
+        width: 84vw;
+    }
+    .homepage{
+        height:100vh;
+        width:100vw;
+        border-radius: 0px;
+    }
+    .notes{
+        height: 88vh;
+        width: 98vw;
+    }
+    .popUpInner{
+        width:86vw;
+    }
+    .inputForm{
+        width:74vw;
+    }
+}
+@media only screen and (min-width: 325px) and (max-width: 600px) {
+    
+    .card-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        
+    }
+    .homepage{
+        height:100vh;
+        width:100vw;
+        border-radius: 0px;
+    }
+    .notes{
+        height: 88vh;
+        width: 98vw;
+    }
+    .card-container{
+        width: 40vw;
+        margin:11px;
+    }
+    .cardList-container{
+        overflow: scroll;
+        height: 82vh;
+    }
+    .card{
+        width:40vw;
+    }
+  }
